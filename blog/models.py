@@ -22,7 +22,8 @@ class Post(models.Model):
 # python manage.py migrate 
 # python manage.py shell 
 # from blog.models import Post
-# from django.contrib.auth.models import User 
+# 
+
 # User.objects.all()
 # User.objects.first()
 # User.objects.filter(username='andre')
@@ -45,3 +46,29 @@ class Post(models.Model):
 # post.author.email
 # user.post_set.all() ## shows all their post
 
+# Pagination
+# 
+# import json                                                                                                                                          
+#from blog.models import Post   
+#  
+# with open('posts.json') as f: 
+#    posts_json = json.load(f) 
+#                                                                                                                                                                                                                                                                                                                  
+
+# for post in posts_json: 
+#    post = Post(title=post['title'], content=post['content'], author_id=post['user_id']) 
+#    post.save() 
+
+
+# from django.core.paginator import Paginator  
+# posts = []
+# posts = ['1', '2', '3', '4', '5']  
+# p = Paginator(posts, 2)
+# p.num_pages
+# for page in p.page_range:
+#   print(page)
+# p1 = p.page(1)
+# p1.number 
+# p1.object_list
+# p1.has_next()
+# p1.next_page_number() 
