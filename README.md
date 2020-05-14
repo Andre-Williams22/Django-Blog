@@ -1,7 +1,7 @@
 # Django-Blog
 
 
-![Gif Site]()
+![Blog Site](https://github.com/Andre-Williams22/Django-Blog/blob/master/media/screenshot.png)
 
 ## About 
 This blog is a platform for machine learning and data enthusiasts to share valuable content to the world. User's can contribute to the blog and add their own personalization with different types of content and robust profile pictures to make their prescence known.
@@ -34,6 +34,7 @@ git clone (repo link)
 ```
 2. Make sure in the correct directory
 ```
+cd django-blog
 ```
 3. python manage.py runserver 
 You should see something similar to the output below:
