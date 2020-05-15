@@ -45,17 +45,23 @@ git clone (repo link)
 ```
 cd django-blog
 ```
-3. python manage.py runserver 
+3. python3 manage.py runserver 
+
 You should see something similar to the output below:
 ```
-* Environment: production
-   WARNING: This is a development server. Do not use it in a production deployment.
-   Use a production WSGI server instead.
-* Debug mode: off
-* Running on (Your Localhost IP) (Press CTRL+C to quit)
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+May 15, 2020 - 16:05:35
+Django version 3.0.6, using settings 'blog_site.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
 ```
 ## Running the tests
-(TODO)
+```
+python3 manage.py test
+```
 
 ## Built With
 
