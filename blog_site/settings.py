@@ -149,10 +149,9 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER ='awjrs22@gmail.com' #os.getenv('EMAIL_USER') # config('EMAIL_USER')
 EMAIL_HOST_PASSWORD ='zoibkrhjhaughdcu' #.getenv('EMAIL_PASS') # config('EMAIL_PASS')
 
-
 AWS_ACCESS_KEY_ID=os.getenv('AWS_ACCESS_KEY_ID')   #   #config('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY=os.getenv('AWS_SECRET_ACCESS_KEY')  #    #config('AWS_SECRET_ACCESS_KEY')
-AWS_STORAGE_BUCKET_NAME='django-ml-blog-files'  #os.environ.get('AWS_STORAGE_BUCKET_NAME')     #config("AWS_STORAGE_BUCKET_NAME")
+AWS_STORAGE_BUCKET_NAME='django-ml-blog-files'  #os.environ.get('AWS_STORAGE_BUCKET_NAME')  config("AWS_STORAGE_BUCKET_NAME")
 
 AWS_S3_FILE_OVERWRITE = False 
 AWS_DEFAULT_ACL = None 
