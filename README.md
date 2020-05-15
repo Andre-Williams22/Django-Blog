@@ -26,6 +26,7 @@ pip3 install django
 pip3 install PILLOW
 pip3 install boto3 
 pip3 install django-storages
+pip3 install gunicorn
 
 ```
 
