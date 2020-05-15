@@ -72,6 +72,6 @@ python3 manage.py test
 ## Built With
 
 * Django 
-* Amazon s3 
+* Amazon S3 
 * Heroku 
-
+* Python
