@@ -1,7 +1,7 @@
 # Django-Blog
 
 
-![Blog Site](https://github.com/Andre-Williams22/Django-Blog/blob/master/media/screenshot.png)
+![Blog Site](https://github.com/Andre-Williams22/Django-Blog/blob/master/media/screenshot.jpg)
 
 ## About 
 This blog is a platform for machine learning and data enthusiasts to share valuable content to the world. User's can contribute to the blog and add their own personalization with different types of content and robust profile pictures to make their prescence known.
@@ -10,6 +10,10 @@ This blog is a platform for machine learning and data enthusiasts to share valua
 ## Author
 
 [Andre Williams](https://www.linkedin.com/in/andrewilliams22/) 
+
+## Live Deployment 
+
+https://machinelearningblog.herokuapp.com/
 
 ## Getting Started
 
