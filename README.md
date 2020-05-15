@@ -27,7 +27,8 @@ pip3 install PILLOW
 pip3 install boto3 
 pip3 install django-storages
 pip3 install gunicorn
-
+pip3 install psycopg2==2.7.5
+pip3 django-heroku
 ```
 
 ### Installing
