@@ -147,7 +147,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587 
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER ='awjrs22@gmail.com' #os.getenv('EMAIL_USER') # config('EMAIL_USER')
-EMAIL_HOST_PASSWORD ='lfmiryyocmasbpwlos' #.getenv('EMAIL_PASS') # config('EMAIL_PASS')
+EMAIL_HOST_PASSWORD ='zoibkrhjhaughdcu' #.getenv('EMAIL_PASS') # config('EMAIL_PASS')
 
 
 AWS_ACCESS_KEY_ID=os.getenv('AWS_ACCESS_KEY_ID')   #   #config('AWS_ACCESS_KEY_ID')
