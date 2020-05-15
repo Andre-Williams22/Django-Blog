@@ -45,8 +45,14 @@ git clone (repo link)
 ```
 cd django-blog
 ```
-3. python3 manage.py runserver 
-
+3. Install the requirements 
+```
+pip freeze > requirements.txt 
+```
+4. Run the Server
+```
+python3 manage.py runserver
+```
 You should see something similar to the output below:
 ```
 Watching for file changes with StatReloader
