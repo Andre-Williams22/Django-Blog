@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
 """
-from decouple import config
+
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -123,22 +124,33 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+STATIC_ROOT=os.path.join(BASE_DIR, 'staticfiles')
 MEDIA_URL = '/media/'
 
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    #'/var/www/static/',
+]
+
+
 CRISPY_TEMPLATE_PACK='bootstrap4'
-
 LOGIN_REDIRECT_URL = 'blog-home'
-
-
 LOGIN_URL = 'login'
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-
 EMAIL_HOST = 'smtp.gmail.com'
-
 EMAIL_PORT = 587 
-
 EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.getenv('EMAIL_USER') # config('EMAIL_USER')
+EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASS') # config('EMAIL_PASS')
 
-EMAIL_HOST_USER = config('EMAIL_USER') #os.getenv('EMAIL_USER')
-EMAIL_HOST_PASSWORD = config('EMAIL_PASS')##os.getenv('EMAIL_PASS')
+
+AWS_ACCESS_KEY_ID=os.getenv('AWS_ACCESS_KEY_ID')   #   #config('AWS_ACCESS_KEY_ID')
+AWS_SECRET_ACCESS_KEY=os.getenv('AWS_SECRET_ACCESS_KEY')  #    #config('AWS_SECRET_ACCESS_KEY')
+AWS_STORAGE_BUCKET_NAME='django-ml-blog-files'  #os.environ.get('AWS_STORAGE_BUCKET_NAME')     #config("AWS_STORAGE_BUCKET_NAME")
+
+AWS_S3_FILE_OVERWRITE = False 
+AWS_DEFAULT_ACL = None 
+
+
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'

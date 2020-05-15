@@ -1,8 +1,7 @@
 from django.test import TestCase, Client
-from django.urls import resolve 
 from django.http import HttpRequest
 from blog.views import about
-
+from blog.views import blog
 from django.contrib.auth.models import User
 from blog.models import Post
 
@@ -13,7 +12,6 @@ class AboutTest(TestCase):
         
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, '<h1>About Page</h1>')
-
 
 
 class BlogTest(TestCase):
